@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 10px;
+}
+
+div .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#cards {
+    width: fit-content;
+    height: max(600);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.card {
+    font-size: large;
+    height: fit-content;
+    width: fit-content;
+    border: dotted 1px brown;
+    align-items: end;
+    padding: 5px 25px 5px 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card:hover {
+    transform: scale(102%);
+}
+
+.card::after {
+    content: 'X';
+    padding-left: 10px;
+    font-size: large;
+    color: red;
+}
